@@ -1,0 +1,79 @@
+.userProfileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    
+}
+.profileButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon{
+    width: 8vw;
+    height: 8vw;
+    padding: 5vw;
+
+}
+
+.username{
+    margin-left: 4%;
+    font-size: 6vw;
+    font-weight: 200;
+}
+.buttonText{
+    display: none;
+}
+
+@media (min-width:700px){
+    .userProfileContainer{
+        flex-direction: row-reverse;
+        margin-bottom: 2%;
+    }
+    .profileButtonsContainer{
+        flex-direction: row-reverse;
+    }
+    .icon{
+        width: 2vw;
+        height: 2vw;
+        padding: 0%; 
+        border-radius: 50%;
+        transition: ease-in 0.5s;
+    }
+    .iconContainer{
+        display: flex;
+        padding-left: 1vw;
+        height: 3vw;
+        align-items: center;
+        width: 10vw;
+        border-radius: 13%/50%;
+        transition:  ease-in-out 0.5s;
+        background: linear-gradient(to right, var(--4), white 60%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+        margin-right: 1vw;
+        margin-top: 2%;
+    }
+    .iconContainer:hover{
+        cursor: pointer;
+        background-color: var(--4);
+        background-position: left bottom;
+        box-shadow: 1px 1px 0;
+    }
+    .buttonText{
+        display: inline;
+        color: white;
+        margin-left: 20%;
+    }
+    /*.icon:hover{
+        background-color: var(--4);
+        border-radius: 50%;
+
+    }*/
+    .username{
+        font-size: 1.5vw;
+        margin-left: 2%;
+    }
+}

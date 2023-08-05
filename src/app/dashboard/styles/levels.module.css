@@ -1,0 +1,89 @@
+.levelButton{
+    border: none;
+    font-size: 3vh;
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0 black;
+    
+}
+.levelButton:hover{
+    cursor: pointer;
+}
+
+.levelDashboard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--2);
+    box-shadow: 2px 2px 0px;
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 5%;
+    text-align: center;
+    border: 1px solid black;
+
+}
+.levelButtonOptions{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.levelText{
+    font-size: 7vw;
+    color: white;
+    margin: 0;
+}
+.arrow1, .arrow2{
+    width: 10vw;
+    height: 10vw;
+    transition: 0.5s;
+}
+.arrow1:hover, .arrow2:hover{
+    cursor: pointer;
+    filter: invert(200);
+}
+.arrow1{
+    rotate: 180deg;
+}
+.level{
+    font-size: 4vh;
+
+}
+@media (min-width: 700px) {
+    .levelButton{
+        font-size: 2vw;
+        border: none;     
+        transition: 0.3s;
+    }
+    .arrow1, .arrow2{
+        height: 3vw;
+        width: 3vw;
+    }
+    .levelButton:hover{
+        cursor: pointer;
+        box-shadow: 4px 4px 0px;
+    }
+    .levelDashboard{
+        max-width: 25%;
+        max-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 2%;
+        transition: 0.5s;
+    
+    }
+    .levelDashboard:hover{
+        box-shadow: 4px 4px 0px;
+    }
+    .levelText{
+        font-size: 2vw;
+    }
+    .level{
+        font-size: 2.5vw;
+    }
+}
